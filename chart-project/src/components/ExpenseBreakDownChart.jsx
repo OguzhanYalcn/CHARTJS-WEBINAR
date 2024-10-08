@@ -1,9 +1,9 @@
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement } from 'chart.js';
 import { Pie } from 'react-chartjs-2'
 import { myCompany } from '../data/data'
 
 // Gerekli Chart.js bileşenlerini kaydediyoruz
-ChartJS.register(ArcElement, Tooltip, Legend);
+ChartJS.register(Title, Tooltip, Legend, ArcElement);
 
 const ExpenseBreakDownChart = () => {
     //Ocak Ayı İçin

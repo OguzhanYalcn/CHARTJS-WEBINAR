@@ -1,11 +1,11 @@
 // import React from 'react'
-import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
 import { Bar } from 'react-chartjs-2'
 // import { Chart as ChartJS, plugins } from 'chart.js/auto'
 import { myCompany } from '../data/data'
 
 // Gerekli Chart.js bileşenlerini kaydediyoruz
-ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
 const IncomeExpenseCharts = () => {
   const chartData = {
