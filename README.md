@@ -23,22 +23,22 @@ Bu webinar sırasında aşağıdaki konular ele alınmıştır:
 
 <p align="center">
   <span>
-    <img src="../CHARTJS-WEBINAR/ScreenShots/Screenshot-01.png" width="300" alt="ChartJS Uygulama Ekranı"/>
+    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-01.png" width="300" alt="Grafik Örneği-1"/>
   </span>
    <span>
-    <img src="../CHARTJS-WEBINAR/ScreenShots/Screenshot-02.png" width="300" alt="Grafik Örnekleri"/>
+    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-02.png" width="300" alt="Grafik Örneği-2"/>
   </span>
   <span>
-    <img src="../CHARTJS-WEBINAR/ScreenShots/Screenshot-03.png" width="300" alt="Grafik Detayları"/>
+    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-03.png" width="300" alt="Grafik Örneği-3"/>
   </span>
 </p>
 
 <p align="center">
-    <img src="../CHARTJS-WEBINAR/ScreenShots/Screenshot-04.png" width="700" alt="Uygulama Arayüzü"/>
+    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-04.png" width="700" alt="Uygulama Arayüzü-1"/>
 </p>
 
 <p align="center">
-    <img src="../CHARTJS-WEBINAR/ScreenShots/Screenshot-05.png" width="700" alt="Sonuç Görüntüsü"/>
+    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-05.png" width="700" alt="Uygulama Arayüzü-1"/>
 </p>
 
 ## 🛠 Proje Gereksinimleri
