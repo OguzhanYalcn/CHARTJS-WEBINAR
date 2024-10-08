@@ -7,7 +7,7 @@
 Bu proje, BilgeAdam Akademi tarafından düzenlenen ve Erdem Sabri Beşik tarafından verilen "Chart.js ile Modern Web Projelerinize Görselleştirmeler" webinarı esnasında öğretici bir içerik olması için hazırlanmıştır. Bu etkinlikte, modern web projelerinde grafiklerle verilerimizi nasıl görselleştirebileceğimizi öğrenerek Chart.js'in gücünü keşfetmek için önemli bir adım attık.
 
 <p align="center">
-  <img src="../CHARTJS-WEBINAR/Screenshots/ChartJS-Webinar.jpg" width="700" alt="Webinar Tanıtım"/>
+  <img src="Screenshots/ChartJS-Webinar.jpg" width="700" alt="Webinar Tanıtım"/>
 </p>
 
 ## 🎯 Webinar İçeriği
@@ -23,22 +23,22 @@ Bu webinar sırasında aşağıdaki konular ele alınmıştır:
 
 <p align="center">
   <span>
-    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-01.png" width="300" alt="Grafik Örneği-1"/>
+    <img src="Screenshots/Screenshot-01.png" width="300" alt="Grafik Örneği-1"/>
   </span>
    <span>
-    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-02.png" width="300" alt="Grafik Örneği-2"/>
+    <img src="Screenshots/Screenshot-02.png" width="300" alt="Grafik Örneği-2"/>
   </span>
   <span>
-    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-03.png" width="300" alt="Grafik Örneği-3"/>
+    <img src="Screenshots/Screenshot-03.png" width="300" alt="Grafik Örneği-3"/>
   </span>
 </p>
 
 <p align="center">
-    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-04.png" width="700" alt="Uygulama Arayüzü-1"/>
+    <img src="Screenshots/Screenshot-04.png" width="700" alt="Uygulama Arayüzü-1"/>
 </p>
 
 <p align="center">
-    <img src="../CHARTJS-WEBINAR/Screenshots/Screenshot-05.png" width="700" alt="Uygulama Arayüzü-1"/>
+    <img src="Screenshots/Screenshot-05.png" width="700" alt="Uygulama Arayüzü-1"/>
 </p>
 
 ## 🛠 Proje Gereksinimleri
