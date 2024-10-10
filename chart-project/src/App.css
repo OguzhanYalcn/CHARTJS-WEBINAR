@@ -1,25 +1,35 @@
+/* Global styles applied to all elements (Tüm elementlere uygulanan genel stiller) */
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; /* Includes padding and border in the element's total width/height (Padding ve kenarlıkları toplam genişlik/yükseklik içinde sayar) */
+  margin: 0; /* Removes default margin of all elements (Tüm elementlerin varsayılan boşluklarını kaldırır) */
+  padding: 0; /* Removes default padding of all elements (Tüm elementlerin varsayılan iç boşluklarını kaldırır) */
 }
+
+/* Body styles (Body stilleri) */
 body{
-  text-align: center;
-  background: #e0e0e0 /* #1C1C1C */;
-  color: #333333 /* #c2c2c2 */;
+  text-align: center; /* Centers text alignment (Metin hizalamasını ortalar) */
+  background: #e0e0e0; /* Light gray background color (Açık gri arka plan rengi) */
+  /* #1C1C1C (Alternative dark background color - Alternatif koyu arka plan rengi) */
+  color: #333333; /* Dark gray text color (Koyu gri metin rengi) */
+  /* #c2c2c2 (Alternative light text color - Alternatif açık metin rengi) */
 }
+
+/* Container styles (Container stilleri) */
 .container{
-  width: 80%;
-  margin: 30px auto;
-  display: flex;
-  flex-wrap: wrap;
+  width: 80%; /* Sets the width to 80% of the parent element (Genişliği üst öğenin %80'i olarak ayarlar) */
+  margin: 30px auto; /* Adds space above and below the container, centers it horizontally (Üst ve altta boşluk bırakır, yatayda ortalar) */
+  display: flex; /* Uses flexbox for layout (Yerleşim için flexbox kullanır) */
+  flex-wrap: wrap; /* Allows items to wrap onto multiple lines (Öğelerin birden fazla satıra sarmalamasına izin verir) */
 
 }
+
+/* Main section styles (Ana bölüm stilleri) */
 .main{
-  width: 100%;
-  margin-bottom: 60px;
+  width: 100%; /* Takes up the full width of the container (Konteynerin tam genişliğini kaplar) */
+  margin-bottom: 60px; /* Adds space below the main section (Ana bölümün altında boşluk bırakır) */
 }
-.income,.expense{
 
-  width: 50%;
+/* Income and expense section styles (Gelir ve gider bölümü stilleri) */
+.income,.expense{
+  width: 50%; /* Each section takes up half of the container width (Her bölüm konteyner genişliğinin yarısını kaplar) */
 }
