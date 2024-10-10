@@ -23,12 +23,13 @@
       <canvas id="myThirdChart"></canvas>
     </div>
 
-    <!-- ChartJS CDN -->
+    <!-- ChartJS CDN - External library inclusion for Chart.js (Harici Chart.js kütüphanesinin dahil edilmesi) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
       const firstChart = document.getElementById("myFirstChart");
       // console.log(firstChart);
+      // Create a new bar chart using Chart.js (Chart.js kullanarak yeni bir çubuk grafik oluştur)
       new Chart(firstChart, {
         type: "bar",
         data: {
@@ -53,7 +54,9 @@
         options: {
           scales: {
             y: {
-              beginAtZero: false /* default değeri true'dur. flase olursa en düşük değerin bir tık altından başlar. */,
+              beginAtZero: false,
+              /* The default value is "true." If set to "false," the chart starts slightly below the lowest value. 
+              ("default" değeri "true"dur. "false" olursa en düşük değerin bir tık altından başlar.) */
             },
           },
         },
@@ -73,6 +76,12 @@
         // type: "pie",
         // type: "doughnut",
         // type: "bar",
+
+        // The "type" property can be specified here to set the overall chart type or can be defined individually within the datasets for mixed chart types.
+        // This allows flexibility in creating different chart types like "line," "pie," "doughnut," and "bar" either as a whole or in combination.
+        // ("type" özelliği, burada genel grafik türünü belirlemek için kullanılabilir veya dataset'ler içinde tek tek tanımlanabilir.
+        // Bu, grafikleri bütünüyle veya birleştirerek "line" (çizgi), "pie" (pasta), "doughnut" (halka), ve "bar" (çubuk) gibi farklı türlerde oluşturma esnekliği sağlar.)
+
         data: {
           labels: dataset_01.map((item) => item.year),
           datasets: [
@@ -105,24 +114,27 @@
           ],
         },
         options: {
-          /* animation: false, */ /* animasyonsuz açılır */
+          /* animation: false, */ /* Disables the animation effect, displaying the chart instantly. (Animasyon etkisini devre dışı bırakır, grafiği anında gösterir.) */
           animation: {
             duration: 1000,
-            // easing: "linear"
-            /* easing: "easeIn" */ /* başta yavaş sonra hızlı */
-            easing: "easeInOutBounce" /* Hafif zıplama efektiyle çıkar */,
+            /* easing: "linear" */ /* Maintains a constant speed throughout the animation. (Animasyon boyunca sabit bir hızda ilerler.) */
+            /* easing: "easeIn" */ /* Starts slow and accelerates towards the end of the animation. (Animasyonun başında yavaş başlar ve sonunda hızlanır.) */
+            easing:
+              "easeInOutBounce" /* Provides a bouncing effect during animation (Animasyon sırasında zıplama efekti sağlar) */,
           },
           hover: {
-            mode: "nearest" /* en yakın veri noktasını göster */,
+            mode: "nearest" /* Highlights the closest data point when hovered (Üzerine gelindiğinde en yakın veri noktasını vurgular) */,
             intersect: true,
-            animationDuration: 1000 /* ms cinsinden */,
+            animationDuration: 1000 /* Hover effect duration in milliseconds (ms cinsinden hover efekti süresi) */,
           },
           plugins: {
             legend: {
-              // display: false /* başlığı göster demek (?) */
+              /* display: false */
+              /* The legend (title) will not be displayed. (Legend yani başlık görüntülenmez.) */
             },
             tooltip: {
-              // enabled: false  /* açıklamaları kapatır */
+              /* enabled: false */
+              /* The tooltip (information box) is disabled. (Tooltip yani açıklama kutusu kapatılır.) */
             },
           },
         },
@@ -154,8 +166,9 @@
               data: [2, 4, 6],
               borderWidth: 1,
               borderColor: "red",
-              // backgroundColor: [fillPattern,fillPattern1,fillPattern2]
-              backgroundColor: fillPattern,
+              /* backgroundColor: [fillPattern,fillPattern1,fillPattern2] */ /* Sets the background colors using different image patterns for each data point. (Her bir veri noktası için farklı görsel desenlerle arka plan renkleri ayarlanır.) */
+              backgroundColor:
+                fillPattern /* Uses an image pattern as background (Arka plan olarak resim deseni kullanır) */,
             },
             {
               label: "PT02",
@@ -177,8 +190,9 @@
           scales: {
             x: {
               grid: {
-                // display:false
-                color: "rgba(0,0,255,0.2)",
+                /* display:false */ /* Hides the grid lines for the x-axis (X ekseni için ızgara çizgilerini gizler) */
+                color:
+                  "rgba(0,0,255,0.2)" /* Customizes grid lines with color (Izgara çizgilerini renkle özelleştirir) */,
               },
             },
             y: {
@@ -189,7 +203,7 @@
               min: 0,
               max: 30,
               ticks: {
-                stepSize: 8,
+                stepSize: 8 /* Sets the spacing between tick marks on the axis (Eksen üzerindeki işaretler arasındaki mesafeyi ayarlar) */,
               },
             },
           },
